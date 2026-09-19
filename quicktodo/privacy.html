@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 · 捷待办 QuickTodo</title>
+  <meta name="description" content="捷待办 QuickTodo 官网及软件产品隐私政策：我们如何收集、使用和保护你的数据。">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#f7f7f8">
+  <link rel="canonical" href="https://kubmanong.github.io/privacy-policy/quicktodo/privacy.html">
+  <meta property="og:site_name" content="4freedom · 为了自由">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kubmanong.github.io/privacy-policy/quicktodo/privacy.html">
+  <meta property="og:title" content="隐私政策 · 捷待办 QuickTodo">
+  <meta property="og:description" content="捷待办 QuickTodo 官网及软件产品隐私政策：我们如何收集、使用和保护你的数据。">
+  <meta property="og:locale" content="zh_CN">
+  <!-- 首帧主题引导：在样式表渲染前设置 data-theme，避免夜间或手动暗色用户先看到浅色闪烁。
+       判定规则与 main.js 保持一致（时间自动 / 手动锁定 / ?theme= 预览）；无 JS 时保持默认浅色 -->
+  <script>
+    (function () {
+      "use strict";
+      try {
+        var v = localStorage.getItem("qt-theme");
+        var mode = (v === "auto" || v === "light" || v === "dark") ? v : "auto";
+        var h = new Date().getHours();
+        var theme = mode === "auto" ? (h >= 6 && h < 18 ? "light" : "dark") : mode;
+        var q = location.search.match(/[?&]theme=(dark|light)/);
+        if (q) theme = q[1];
+        document.documentElement.setAttribute("data-theme", theme);
+        var mc = document.querySelector('meta[name="theme-color"]');
+        if (mc) mc.setAttribute("content", theme === "dark" ? "#161618" : "#f7f7f8");
+      } catch (e) { /* localStorage 不可用：保持默认浅色 */ }
+    })();
+  </script>
+  <link rel="stylesheet" href="../assets/fonts/smiley-sans.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <div class="wallpaper" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <header class="menubar">
+    <div class="container menubar-inner">
+      <a class="brand" href="../index.html" aria-label="4freedom 隐私政策目录">
+        <img class="brand-logo-png" src="../assets/img/logo.png" alt="4freedom" width="400" height="223">
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="../index.html">政策目录</a>
+        <a href="privacy.html" aria-current="page">隐私政策</a>
+      </nav>
+      <div class="menubar-right">
+        <span class="menubar-clock" data-clock aria-hidden="true"></span>
+        <button class="icon-btn" data-theme-toggle aria-label="切换明暗主题"></button>
+        <button class="icon-btn menu-toggle" aria-label="打开菜单" aria-expanded="false">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="移动端导航">
+    <a href="../index.html">政策目录</a>
+    <a href="privacy.html">隐私政策</a>
+  </nav>
+
+  <main class="section" style="padding-top:calc(var(--menubar-h) + 56px)">
+    <div class="container doc-layout">
+      <article class="glass doc">
+        <div class="doc-head">
+          <h1>隐私政策</h1>
+          <p class="doc-meta">最近更新：2026 年 8 月 19 日 · 生效日期：2026 年 8 月 19 日 · 适用产品：捷待办 QuickTodo</p>
+        </div>
+
+        <p>
+          我们深知个人信息对您的重要性。本政策说明「捷待办」网站及应用（下称「本服务」，
+          运营主体：<span class="placeholder">运营主体名称</span>）在提供服务的过程中收集、使用、存储和保护信息的方式。
+          <strong>一句话概括：待办数据默认只存在您的 Mac 本地，我们经营的服务器不收集、不存储您的任何待办内容。</strong>
+        </p>
+
+        <h2 id="p1"><span class="sec-no">01</span>我们收集的信息</h2>
+        <ul>
+          <li><strong>待办内容：</strong>您输入的待办文字与时间，默认以数据库形式存储在您的设备本地，不上传。</li>
+          <li><strong>网站访问日志：</strong>本网站由静态页面构成。若您通过国内托管服务访问，托管服务商可能按法规要求记录访问 IP、时间等常规日志，此类日志仅用于安全与合规用途。</li>
+          <li><strong>系统权限：</strong>应用仅在您主动开启时使用「通知」权限（用于待办提醒）；不申请通讯录、位置、麦克风、摄像头等任何其他敏感权限。</li>
+          <li><strong>我们不做的事情：</strong>不嵌入任何第三方统计 / 分析 SDK，不收集设备指纹，不进行广告跟踪，不售卖任何数据。</li>
+        </ul>
+
+        <h2 id="p2"><span class="sec-no">02</span>iCloud 同步（可选）</h2>
+        <ul>
+          <li>iCloud 同步为可选功能，默认关闭。开启后，您的待办数据将通过 Apple CloudKit 在您登录同一 Apple ID 的设备间同步。</li>
+          <li>同步使用您的 iCloud 私有容器，数据由 Apple 按 iCloud 安全架构（含端到端加密能力）处理，我们无法访问其中的内容。</li>
+          <li>关闭或停止使用 iCloud 同步后，本地数据不受影响，云端数据可在系统设置中管理。</li>
+        </ul>
+
+        <h2 id="p3"><span class="sec-no">03</span>信息的使用</h2>
+        <ul>
+          <li>本地数据仅用于实现待办的记录、分组、提醒与展示。</li>
+          <li>如您通过邮件向我们反馈问题，我们仅将您邮件中的内容用于处理该次沟通，不会用于其他用途。</li>
+        </ul>
+
+        <h2 id="p4"><span class="sec-no">04</span>信息的存储与保护</h2>
+        <ul>
+          <li>数据存储于设备本地应用容器内，受 macOS 沙箱与系统数据保护机制保护。</li>
+          <li>卸载应用即删除全部本地数据；您也可以先在「设置 → 数据」中导出全部待办（通用格式）再行卸载。</li>
+        </ul>
+
+        <h2 id="p5"><span class="sec-no">05</span>未成年人保护</h2>
+        <p>
+          本服务主要面向普通成年用户。未成年人使用本服务前，应确保已取得监护人同意；
+          如监护人有理由认为未成年人在未经同意的情况下向我们提供了个人信息，请与我们联系，我们将及时删除相关内容。
+        </p>
+
+        <h2 id="p6"><span class="sec-no">06</span>您的权利</h2>
+        <ul>
+          <li><strong>访问与导出：</strong>您可随时在应用内查看、导出全部待办数据。</li>
+          <li><strong>更正与删除：</strong>待办可逐条编辑或删除，清空数据即刻生效。</li>
+          <li><strong>注销：</strong>本服务无账号体系，卸载应用并删除本地容器即完成全部数据清理。</li>
+        </ul>
+
+        <h2 id="p7"><span class="sec-no">07</span>政策更新</h2>
+        <p>
+          我们可能不时更新本政策，更新后会在本页面公示并修改「最近更新」日期。重大变更将通过应用内提示或网站公告等方式通知您。
+        </p>
+
+        <h2 id="p8"><span class="sec-no">08</span>联系我们</h2>
+        <p>
+          有关隐私的任何问题、投诉与建议，请联系：<strong>hello4freedom@163.com</strong>。
+        </p>
+      </article>
+
+      <aside class="glass doc-toc" aria-label="目录">
+        <h4>目录</h4>
+        <a href="#p1">01 收集的信息</a>
+        <a href="#p2">02 iCloud 同步</a>
+        <a href="#p3">03 信息的使用</a>
+        <a href="#p4">04 存储与保护</a>
+        <a href="#p5">05 未成年人</a>
+        <a href="#p6">06 您的权利</a>
+        <a href="#p7">07 政策更新</a>
+        <a href="#p8">08 联系我们</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer" style="margin-top:80px">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none">
+        <span>© 2026 4freedom · 为了自由</span>
+        <div class="icp-links">
+          <a href="../index.html">政策目录</a>
+          <a href="mailto:hello4freedom@163.com">hello4freedom@163.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

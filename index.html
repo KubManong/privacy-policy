@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策目录 · 4freedom</title>
+  <meta name="description" content="4freedom 旗下各款 macOS 应用的隐私政策与法律文档目录。">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#f7f7f8">
+  <link rel="canonical" href="https://kubmanong.github.io/privacy-policy/">
+  <meta property="og:site_name" content="4freedom · 为了自由">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kubmanong.github.io/privacy-policy/">
+  <meta property="og:title" content="隐私政策目录 · 4freedom">
+  <meta property="og:description" content="4freedom 旗下各款 macOS 应用的隐私政策与法律文档目录。">
+  <meta property="og:locale" content="zh_CN">
+  <!-- 首帧主题引导：在样式表渲染前设置 data-theme，避免夜间或手动暗色用户先看到浅色闪烁。
+       判定规则与 main.js 保持一致（时间自动 / 手动锁定 / ?theme= 预览）；无 JS 时保持默认浅色 -->
+  <script>
+    (function () {
+      "use strict";
+      try {
+        var v = localStorage.getItem("qt-theme");
+        var mode = (v === "auto" || v === "light" || v === "dark") ? v : "auto";
+        var h = new Date().getHours();
+        var theme = mode === "auto" ? (h >= 6 && h < 18 ? "light" : "dark") : mode;
+        var q = location.search.match(/[?&]theme=(dark|light)/);
+        if (q) theme = q[1];
+        document.documentElement.setAttribute("data-theme", theme);
+        var mc = document.querySelector('meta[name="theme-color"]');
+        if (mc) mc.setAttribute("content", theme === "dark" ? "#161618" : "#f7f7f8");
+      } catch (e) { /* localStorage 不可用：保持默认浅色 */ }
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/fonts/smiley-sans.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="wallpaper" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <header class="menubar">
+    <div class="container menubar-inner">
+      <a class="brand" href="index.html" aria-label="4freedom 隐私政策目录">
+        <img class="brand-logo-png" src="assets/img/logo.png" alt="4freedom" width="400" height="223">
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html" aria-current="page">政策目录</a>
+      </nav>
+      <div class="menubar-right">
+        <span class="menubar-clock" data-clock aria-hidden="true"></span>
+        <button class="icon-btn" data-theme-toggle aria-label="切换明暗主题"></button>
+        <button class="icon-btn menu-toggle" aria-label="打开菜单" aria-expanded="false">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="移动端导航">
+    <a href="index.html">政策目录</a>
+  </nav>
+
+  <main class="section" style="padding-top:calc(var(--menubar-h) + 56px)">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="dot"></span>法律文档</span>
+        <h1 class="section-title">隐私政策</h1>
+        <p class="section-sub">4freedom 旗下每一款应用的隐私政策都列在这里。数据最小化，是我们的默认立场。</p>
+      </div>
+      <div class="product-grid">
+        <article class="glass product-card reveal">
+          <div class="product-card-top">
+            <img class="product-icon" src="assets/img/app-icon.png" alt="捷待办应用图标" width="76" height="76" decoding="async">
+            <div>
+              <div class="product-en">QuickTodo · macOS</div>
+              <h3 class="product-name">捷待办</h3>
+            </div>
+          </div>
+          <p class="product-desc">
+            常驻菜单栏的中文待办工具。待办数据默认只存在你的 Mac 本地：不收集、不上传、不跟踪。
+          </p>
+          <div class="product-actions">
+            <a class="btn btn-primary" href="quicktodo/privacy.html">
+              查看隐私政策
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" style="margin-top:80px">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none">
+        <span>© 2026 4freedom · 为了自由</span>
+        <div class="icp-links">
+          <a href="mailto:hello4freedom@163.com">hello4freedom@163.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
